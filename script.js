@@ -8,6 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('nav-menu');
   const hamburger = document.querySelector('.hamburger');
 
+  // Defensive checks
+  if (!langEnBtn || !langIdBtn || !navMenu || !hamburger) {
+    console.error('Essential elements for language switcher or hamburger menu not found.');
+    return;
+  }
+
   // Default language
   let currentLang = 'en';
 
@@ -27,11 +33,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize language
   setLanguage(currentLang);
 
-  // Hamburger menu toggle
+  // Hamburger menu toggle with improved logic
   hamburger.addEventListener('click', () => {
-    const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
-    hamburger.setAttribute('aria-expanded', !expanded);
-    navMenu.classList.toggle('active');
+    const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', String(!expanded));
+    if (navMenu.classList.contains('active')) {
+      navMenu.classList.remove('active');
+    } else {
+      navMenu.classList.add('active');
+    }
   });
 
   // Close menu on nav link click (for mobile)
@@ -39,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', () => {
       if (navMenu.classList.contains('active')) {
         navMenu.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', false);
+        hamburger.setAttribute('aria-expanded', 'false');
       }
     });
   });
@@ -60,7 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Language switch fade effect
-  const elementsToTranslate = document.querySelectorAll('[data-en][data-id]');
   function fadeOutIn(element, newText) {
     element.style.opacity = 0;
     setTimeout(() => {
