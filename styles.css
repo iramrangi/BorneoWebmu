@@ -48,6 +48,13 @@ body {
   user-select: none;
 }
 
+.logo img {
+  filter: brightness(0) invert(0);
+  /* This will make the logo appear dark (black on white) */
+  height: 40px;
+  width: auto;
+}
+
 .nav-menu {
   list-style: none;
   display: flex;
