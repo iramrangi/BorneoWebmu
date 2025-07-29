@@ -1,57 +1,69 @@
 /* Script for language switching, hamburger menu toggle, and portfolio "See More" functionality */
 
 document.addEventListener('DOMContentLoaded', () => {
-  const langEnBtn = document.getElementById('lang-en');
-  const langIdBtn = document.getElementById('lang-id');
-  const langButtons = [langEnBtn, langIdBtn];
+  const langButtons = document.querySelectorAll('.lang-btn');
   const elementsToTranslate = document.querySelectorAll('[data-en][data-id]');
   const navMenu = document.getElementById('nav-menu');
   const hamburger = document.querySelector('.hamburger');
+  const seeMoreBtn = document.querySelector('.portfolio-see-more .btn');
+  const portfolioGrid = document.querySelector('.portfolio-grid');
+  let showingAll = false;
+  let currentLang = localStorage.getItem('preferredLang') || 'en';
 
   // Defensive checks
-  if (!langEnBtn || !langIdBtn || !navMenu || !hamburger) {
+  if (!langButtons.length || !navMenu || !hamburger) {
     console.error('Essential elements for language switcher or hamburger menu not found.');
     return;
   }
 
-  // Default language
-  let currentLang = 'en';
+  // Set language with fade effect
+  function fadeOutIn(element, newText) {
+    element.style.transition = 'opacity 0.3s ease';
+    element.style.opacity = 0;
+    setTimeout(() => {
+      element.textContent = newText;
+      element.style.opacity = 1;
+    }, 300);
+  }
 
   function setLanguage(lang) {
     currentLang = lang;
+    localStorage.setItem('preferredLang', lang);
     elementsToTranslate.forEach(el => {
-      el.textContent = el.getAttribute(`data-${lang}`);
+      fadeOutIn(el, el.getAttribute(`data-${lang}`));
     });
     langButtons.forEach(btn => {
       btn.classList.toggle('active', btn.id === `lang-${lang}`);
+      btn.setAttribute('aria-pressed', btn.classList.contains('active'));
     });
   }
 
-  langEnBtn.addEventListener('click', () => setLanguage('en'));
-  langIdBtn.addEventListener('click', () => setLanguage('id'));
+  // Language button event delegation
+  document.querySelector('.lang-switcher').addEventListener('click', (e) => {
+    if (e.target.classList.contains('lang-btn')) {
+      const lang = e.target.id.replace('lang-', '');
+      if (lang !== currentLang) {
+        setLanguage(lang);
+      }
+    }
+  });
 
   // Initialize language
   setLanguage(currentLang);
 
-  // Hamburger menu toggle with improved logic
+  // Hamburger menu toggle
   hamburger.addEventListener('click', () => {
     const expanded = hamburger.getAttribute('aria-expanded') === 'true';
     hamburger.setAttribute('aria-expanded', String(!expanded));
-    if (navMenu.classList.contains('active')) {
-      navMenu.classList.remove('active');
-    } else {
-      navMenu.classList.add('active');
-    }
+    navMenu.classList.toggle('active');
   });
 
   // Close menu on nav link click (for mobile)
-  navMenu.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      if (navMenu.classList.contains('active')) {
-        navMenu.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
-      }
-    });
+  navMenu.addEventListener('click', (e) => {
+    if (e.target.classList.contains('nav-link') && navMenu.classList.contains('active')) {
+      navMenu.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
   });
 
   // Smooth scrolling for anchor links
@@ -69,57 +81,60 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Language switch fade effect
-  function fadeOutIn(element, newText) {
-    element.style.opacity = 0;
-    setTimeout(() => {
-      element.textContent = newText;
-      element.style.opacity = 1;
-    }, 300);
+  // Portfolio "See More" functionality
+  if (seeMoreBtn && portfolioGrid) {
+    seeMoreBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const portfolioItems = portfolioGrid.querySelectorAll('.portfolio-post');
+      if (!showingAll) {
+        portfolioItems.forEach(item => item.style.display = 'flex');
+        seeMoreBtn.textContent = 'Show Less';
+        showingAll = true;
+      } else {
+        portfolioItems.forEach((item, index) => {
+          if (index >= 6) item.style.display = 'none';
+        });
+        seeMoreBtn.textContent = 'See More';
+        showingAll = false;
+      }
+    });
+
+    // Initially hide portfolio items beyond 6
+    const portfolioItems = portfolioGrid.querySelectorAll('.portfolio-post');
+    portfolioItems.forEach((item, index) => {
+      if (index >= 6) item.style.display = 'none';
+    });
   }
 
-  langEnBtn.addEventListener('click', () => {
-    currentLang = 'en';
-    elementsToTranslate.forEach(el => {
-      fadeOutIn(el, el.getAttribute('data-en'));
-    });
-    langButtons.forEach(btn => {
-      btn.classList.toggle('active', btn.id === 'lang-en');
-    });
-  });
+  // Live demo URLs for portfolio projects
+  const liveDemoUrls = {
+    'IKN TIME': 'https://www.ikntime.com/',
+    'SMA SANTO PAULUS NYARUMKOP': 'https://www.smasantopaulusskw.id/',
+    'MINE SAFETY': 'https://www.minesafety.id/',
+    'Project Four': 'https://www.indotribune.com/',
+    'Project Five': 'https://example.com/project-five-live-demo',
+    'Project Six': 'https://example.com/project-six-live-demo',
+    'Project Seven': 'https://example.com/project-six-live-demo',
+    'Project Eight': 'https://example.com/project-six-live-demo',
+    'Project Nine': 'https://example.com/project-six-live-demo',
+  };
 
-  langIdBtn.addEventListener('click', () => {
-    currentLang = 'id';
-    elementsToTranslate.forEach(el => {
-      fadeOutIn(el, el.getAttribute('data-id'));
-    });
-    langButtons.forEach(btn => {
-      btn.classList.toggle('active', btn.id === 'lang-id');
-    });
-  });
-
-  // Portfolio "See More" functionality
-  const seeMoreBtn = document.querySelector('.portfolio-see-more .btn');
-  const portfolioGrid = document.querySelector('.portfolio-grid');
-  let showingAll = false;
-
-  seeMoreBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (!showingAll) {
-      // Show all portfolio items (for demo, duplicate existing items)
-      for (let i = 0; i < 3; i++) {
-        const clone = portfolioGrid.children[i].cloneNode(true);
-        portfolioGrid.appendChild(clone);
+  // Event delegation for "Read More" links
+  portfolioGrid.addEventListener('click', (e) => {
+    if (e.target.classList.contains('portfolio-readmore')) {
+      e.preventDefault();
+      const portfolioPost = e.target.closest('.portfolio-post');
+      if (!portfolioPost) return;
+      const titleElement = portfolioPost.querySelector('.portfolio-title');
+      if (!titleElement) return;
+      const projectTitle = titleElement.textContent.trim();
+      const liveDemoUrl = liveDemoUrls[projectTitle];
+      if (liveDemoUrl) {
+        window.open(liveDemoUrl, '_blank', 'noopener');
+      } else {
+        alert('Live demo URL not available for this project.');
       }
-      seeMoreBtn.textContent = 'Show Less';
-      showingAll = true;
-    } else {
-      // Show only initial items
-      while (portfolioGrid.children.length > 6) {
-        portfolioGrid.removeChild(portfolioGrid.lastChild);
-      }
-      seeMoreBtn.textContent = 'See More';
-      showingAll = false;
     }
   });
 });
+
