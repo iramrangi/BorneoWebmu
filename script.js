@@ -1,4 +1,4 @@
-// Script for language switching and hamburger menu toggle
+/* Script for language switching, hamburger menu toggle, and portfolio "See More" functionality */
 
 document.addEventListener('DOMContentLoaded', () => {
   const langEnBtn = document.getElementById('lang-en');
@@ -96,5 +96,30 @@ document.addEventListener('DOMContentLoaded', () => {
     langButtons.forEach(btn => {
       btn.classList.toggle('active', btn.id === 'lang-id');
     });
+  });
+
+  // Portfolio "See More" functionality
+  const seeMoreBtn = document.querySelector('.portfolio-see-more .btn');
+  const portfolioGrid = document.querySelector('.portfolio-grid');
+  let showingAll = false;
+
+  seeMoreBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (!showingAll) {
+      // Show all portfolio items (for demo, duplicate existing items)
+      for (let i = 0; i < 3; i++) {
+        const clone = portfolioGrid.children[i].cloneNode(true);
+        portfolioGrid.appendChild(clone);
+      }
+      seeMoreBtn.textContent = 'Show Less';
+      showingAll = true;
+    } else {
+      // Show only initial items
+      while (portfolioGrid.children.length > 6) {
+        portfolioGrid.removeChild(portfolioGrid.lastChild);
+      }
+      seeMoreBtn.textContent = 'See More';
+      showingAll = false;
+    }
   });
 });
