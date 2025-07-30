@@ -38,6 +38,19 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  animation: slideDownFadeIn 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slideDownFadeIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .navbar {
@@ -49,11 +62,15 @@ body {
 
 .logo {
   text-decoration: none;
-  color: var(--primary-color);
+  color: #000000; /* dark color for logo text */
   font-family: var(--font-primary);
   font-weight: 600;
   font-size: 1.8rem;
   user-select: none;
+}
+
+.logo img {
+  filter: brightness(0) saturate(100%);
 }
 
 .nav-menu {
@@ -106,6 +123,10 @@ body {
 /* Responsive Styles */
 
 /* Mobile first: base styles are mobile-friendly */
+
+.hidden {
+  display: none !important;
+}
 
 /* Show hamburger and hide nav-menu on small screens */
 @media (max-width: 899px) {
@@ -165,6 +186,25 @@ body {
   margin-bottom: 1rem;
 }
 
+#dynamic-text {
+  border-right: 2px solid var(--primary-color);
+  padding-right: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  animation: blinkCursor 0.7s steps(44) infinite normal;
+}
+
+@keyframes blinkCursor {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--primary-color);
+  }
+}
+
 .hero-subtitle {
   font-size: 1.25rem;
   color: #555;
@@ -216,7 +256,7 @@ body {
 .icon {
   width: 48px;
   height: 48px;
-  stroke: var(--primary-color);
+  stroke: #000000; /* dark color for icons */
 }
 
 .package-title {
@@ -307,6 +347,10 @@ body {
   flex-direction: column;
 }
 
+.portfolio-post.hidden {
+  display: none;
+}
+
 .portfolio-image {
   width: 100%;
   height: auto;
@@ -361,6 +405,27 @@ body {
   padding: 2rem 0 1rem 0;
   margin-top: 3rem;
   font-size: 0.9rem;
+}
+
+#see-more-btn {
+  display: block;
+  margin: 1.5rem auto 0 auto;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  user-select: none;
+}
+
+#see-more-btn:hover,
+#see-more-btn:focus {
+  background-color: var(--secondary-color);
+  outline: none;
 }
 
 .footer-container {
@@ -470,6 +535,127 @@ body {
   .portfolio-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+  .team-photo {
+    height: 400px;
+  }
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Team Section */
+.team-section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.team-member {
+  background-color: #fff7eb;
+  border-radius: 16px;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: 0 8px 24px rgb(255 165 0 / 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.team-name {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.team-role {
+  margin-bottom: 1.5rem;
+}
+
+.team-socials {
+  justify-content: center;
+}
+
+.team-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fbbf24; /* amber-400 */
+  margin-bottom: 1rem;
+}
+
+.team-name {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #111827; /* gray-900 */
+  margin-bottom: 0.25rem;
+}
+
+.team-role {
+  font-size: 1rem;
+  font-style: italic;
+  color: #6b7280; /* gray-500 */
+  margin-bottom: 1rem;
+}
+
+.team-socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-link {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #fbbf24; /* amber-400 */
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #f59e0b; /* amber-500 */
+}
+
+/* Placeholder icons using text */
+.social-link.linkedin::before {
+  content: "in";
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+.social-link.instagram::before {
+  content: "ig";
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+.social-link.email::before {
+  content: "✉";
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  position: absolute;
+  top: 1px;
+  left: 7px;
 }
 
 /* Hamburger menu active state for mobile */
