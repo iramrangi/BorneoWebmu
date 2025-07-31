@@ -178,6 +178,14 @@ body {
   margin-bottom: 3rem;
 }
 
+/* Make hero section full width by overriding container width */
+.hero-section.container {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .hero-title {
   font-family: var(--font-primary);
   font-weight: 600;
