@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BorneoWebmu - Premium Web Development Services</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Background Elements -->
+  <div class="bg-elements">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+    <div class="gradient-overlay"></div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">
+        <img src="Asset/Borneo Webmu.png" alt="BorneoWebmu Logo" class="logo-image" />
+        <span class="logo-text">BorneoWebmu</span>
+      </a>
+      
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#packages" class="nav-link">Packages</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="lang-switcher">
+          <button id="lang-en" class="lang-btn active" aria-label="Switch to English">EN</button>
+          <button id="lang-id" class="lang-btn" aria-label="Switch to Indonesian">ID</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content container">
+        <div class="hero-badge" data-en="Premium Web Development" data-id="Pengembangan Web Premium">
+          Premium Web Development
+        </div>
+        <h1 class="hero-title">
+          <span data-en="We craft" data-id="Kami membuat">We craft</span>
+          <span class="dynamic-text-container">
+            <span id="dynamic-text" class="dynamic-text"></span>
+            <span class="cursor"></span>
+          </span>
+          <span data-en="digital experiences" data-id="pengalaman digital">digital experiences</span>
+        </h1>
+        <p class="hero-subtitle" data-en="Transform your vision into stunning, high-performance websites that captivate your audience and drive results." data-id="Ubah visi Anda menjadi website yang menakjubkan dan berkinerja tinggi yang memikat audiens dan menghasilkan hasil.">
+          Transform your vision into stunning, high-performance websites that captivate your audience and drive results.
+        </p>
+        <div class="hero-actions">
+          <a href="#packages" class="btn btn-primary">
+            <span data-en="Get Started" data-id="Mulai Sekarang">Get Started</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#services" class="btn btn-secondary">
+            <span data-en="Learn More" data-id="Pelajari Lebih Lanjut">Learn More</span>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">100+</div>
+            <div class="stat-label" data-en="Projects Completed" data-id="Proyek Selesai">Projects Completed</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">50+</div>
+            <div class="stat-label" data-en="Happy Clients" data-id="Klien Puas">Happy Clients</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">5+</div>
+            <div class="stat-label" data-en="Years Experience" data-id="Tahun Pengalaman">Years Experience</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-card card-1">
+          <div class="card-icon">💻</div>
+          <div class="card-text">Web Development</div>
+        </div>
+        <div class="floating-card card-2">
+          <div class="card-icon">🎨</div>
+          <div class="card-text">UI/UX Design</div>
+        </div>
+        <div class="floating-card card-3">
+          <div class="card-icon">📱</div>
+          <div class="card-text">Mobile Responsive</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-en="Our Services" data-id="Layanan Kami">Our Services</h2>
+          <p class="section-description" data-en="We provide comprehensive web development solutions tailored to your unique business needs." data-id="Kami menyediakan solusi pengembangan web komprehensif yang disesuaikan dengan kebutuhan bisnis unik Anda.">
+            We provide comprehensive web development solutions tailored to your unique business needs.
+          </p>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="service-title" data-en="Web Development" data-id="Pengembangan Web">Web Development</h3>
+            <p class="service-description" data-en="Custom websites built with modern technologies for optimal performance and user experience." data-id="Website kustom yang dibangun dengan teknologi modern untuk performa optimal dan pengalaman pengguna.">
+              Custom websites built with modern technologies for optimal performance and user experience.
+            </p>
+            <ul class="service-features">
+              <li data-en="Responsive Design" data-id="Desain Responsif">Responsive Design</li>
+              <li data-en="Fast Loading" data-id="Pemuatan Cepat">Fast Loading</li>
+              <li data-en="SEO Optimized" data-id="Dioptimalkan SEO">SEO Optimized</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                <path d="M2 2l7.586 7.586"/>
+                <circle cx="11" cy="11" r="2"/>
+              </svg>
+            </div>
+            <h3 class="service-title" data-en="UI/UX Design" data-id="Desain UI/UX">UI/UX Design</h3>
+            <p class="service-description" data-en="Beautiful and intuitive designs that enhance user engagement and conversion rates." data-id="Desain yang indah dan intuitif yang meningkatkan keterlibatan pengguna dan tingkat konversi.">
+              Beautiful and intuitive designs that enhance user engagement and conversion rates.
+            </p>
+            <ul class="service-features">
+              <li data-en="User Research" data-id="Riset Pengguna">User Research</li>
+              <li data-en="Wireframing" data-id="Wireframing">Wireframing</li>
+              <li data-en="Prototyping" data-id="Prototyping">Prototyping</li>
+            </ul>
+          </div>
+
+          
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <h3 class="service-title" data-en="CMS Development" data-id="Pengembangan CMS">CMS Development</h3>
+            <p class="service-description" data-en="Easy-to-manage content management systems that put you in control of your website." data-id="Sistem manajemen konten yang mudah dikelola yang memberi Anda kendali atas website Anda.">
+              Easy-to-manage content management systems that put you in control of your website.
+            </p>
+            <ul class="service-features">
+              <li data-en="Easy Content Updates" data-id="Update Konten Mudah">Easy Content Updates</li>
+              <li data-en="User Management" data-id="Manajemen Pengguna">User Management</li>
+              <li data-en="SEO Tools" data-id="Alat SEO">SEO Tools</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-en="Choose Your Package" data-id="Pilih Paket Anda">Choose Your Package</h2>
+          <p class="section-description" data-en="Flexible pricing plans designed to fit businesses of all sizes." data-id="Paket harga fleksibel yang dirancang untuk bisnis dari semua ukuran.">
+            Flexible pricing plans designed to fit businesses of all sizes.
+          </p>
+        </div>
+        
+        <div class="packages-grid">
+          <div class="package-card">
+            <div class="package-header">
+              <div class="package-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="5" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <h3 class="package-title" data-en="Basic" data-id="Dasar">Basic</h3>
+              <p class="package-description" data-en="Perfect for small businesses and startups" data-id="Sempurna untuk bisnis kecil dan startup">
+                Perfect for small businesses and startups
+              </p>
+            </div>
+            <div class="package-features">
+              <ul>
+                <li data-en="5 Pages Website" data-id="Website 5 Halaman">5 Pages Website</li>
+                <li data-en="Responsive Design" data-id="Desain Responsif">Responsive Design</li>
+                <li data-en="Basic SEO" data-id="SEO Dasar">Basic SEO</li>
+                <li data-en="Contact Form" data-id="Formulir Kontak">Contact Form</li>
+                <li data-en="1 Month Support" data-id="Dukungan 1 Bulan">1 Month Support</li>
+              </ul>
+            </div>
+            <div class="package-footer">
+              <a
+                href="https://wa.me/62895179222178?text=Hello!%20I%20would%20like%20to%20order%20the%20Basic%20package."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+                aria-label="Order Basic Package via WhatsApp"
+              >
+                <span data-en="Get Started" data-id="Mulai Sekarang">Get Started</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="package-card featured">
+            <div class="package-badge" data-en="Most Popular" data-id="Paling Populer">Most Popular</div>
+            <div class="package-header">
+              <div class="package-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <h3 class="package-title" data-en="Pro" data-id="Pro">Pro</h3>
+              <p class="package-description" data-en="Ideal for growing businesses" data-id="Ideal untuk bisnis yang berkembang">
+                Ideal for growing businesses
+              </p>
+            </div>
+            <div class="package-features">
+              <ul>
+                <li data-en="10 Pages Website" data-id="Website 10 Halaman">10 Pages Website</li>
+                <li data-en="Advanced Design" data-id="Desain Lanjutan">Advanced Design</li>
+                <li data-en="SEO Optimization" data-id="Optimisasi SEO">SEO Optimization</li>
+                <li data-en="CMS Integration" data-id="Integrasi CMS">CMS Integration</li>
+                <li data-en="E-commerce Ready" data-id="Siap E-commerce">E-commerce Ready</li>
+                <li data-en="3 Months Support" data-id="Dukungan 3 Bulan">3 Months Support</li>
+              </ul>
+            </div>
+            <div class="package-footer">
+              <a
+                href="https://wa.me/6289517922178?text=Hello!%20I%20would%20like%20to%20order%20the%20Pro%20package."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+                aria-label="Order Pro Package via WhatsApp"
+              >
+                <span data-en="Get Started" data-id="Mulai Sekarang">Get Started</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="package-card">
+            <div class="package-header">
+              <div class="package-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9,22 9,12 15,12 15,22"/>
+                </svg>
+              </div>
+              <h3 class="package-title" data-en="Enterprise" data-id="Perusahaan">Enterprise</h3>
+              <p class="package-description" data-en="Complete solution for large organizations" data-id="Solusi lengkap untuk organisasi besar">
+                Complete solution for large organizations
+              </p>
+            </div>
+            <div class="package-features">
+              <ul>
+                <li data-en="Unlimited Pages" data-id="Halaman Tak Terbatas">Unlimited Pages</li>
+                <li data-en="Custom Development" data-id="Pengembangan Kustom">Custom Development</li>
+                <li data-en="Advanced SEO" data-id="SEO Lanjutan">Advanced SEO</li>
+                <li data-en="Full CMS" data-id="CMS Lengkap">Full CMS</li>
+                <li data-en="E-commerce Platform" data-id="Platform E-commerce">E-commerce Platform</li>
+                <li data-en="6 Months Support" data-id="Dukungan 6 Bulan">6 Months Support</li>
+              </ul>
+            </div>
+            <div class="package-footer">
+              <a
+                href="https://wa.me/6289517922178?text=Hello!%20I%20would%20like%20to%20order%20the%20Enterprise%20package."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+                aria-label="Order Enterprise Package via WhatsApp"
+              >
+                <span data-en="Get Started" data-id="Mulai Sekarang">Get Started</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-en="What Our Clients Say" data-id="Apa Kata Klien Kami">What Our Clients Say</h2>
+          <p class="section-description" data-en="Don't just take our word for it - hear from our satisfied clients" data-id="Jangan hanya percaya kata kami - dengar dari klien yang puas">
+            Don't just take our word for it - hear from our satisfied clients
+          </p>
+        </div>
+        
+        <div class="testimonials-container">
+          <div class="testimonials-carousel" id="testimonials-carousel">
+            
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card active" data-testimonial="1">
+              <div class="testimonial-content">
+                <div class="quote-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                  </svg>
+                </div>
+                <div class="stars">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+                <p class="testimonial-text" data-en="BorneoWebmu transformed our online presence completely. Their attention to detail and professional approach exceeded our expectations. The website they created for us has significantly increased our customer engagement." data-id="BorneoWebmu mengubah kehadiran online kami sepenuhnya. Perhatian mereka terhadap detail dan pendekatan profesional melebihi harapan kami. Website yang mereka buat telah meningkatkan keterlibatan pelanggan secara signifikan.">
+                  BorneoWebmu transformed our online presence completely. Their attention to detail and professional approach exceeded our expectations. The website they created for us has significantly increased our customer engagement.
+                </p>
+              </div>
+              <div class="client-info">
+                <div class="client-avatar">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Ahmad Rizki" />
+                </div>
+                <div class="client-details">
+                  <h4 class="client-name">Ahmad Rizki</h4>
+                  <p class="client-title" data-en="CEO, TechStart Indonesia" data-id="CEO, TechStart Indonesia">CEO, TechStart Indonesia</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card" data-testimonial="2">
+              <div class="testimonial-content">
+                <div class="quote-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                  </svg>
+                </div>
+                <div class="stars">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+                <p class="testimonial-text" data-en="Working with BorneoWebmu was an absolute pleasure. They delivered our e-commerce platform on time and within budget. The site is fast, secure, and user-friendly. Our sales have increased by 40% since launch!" data-id="Bekerja dengan BorneoWebmu sangat menyenangkan. Mereka menyelesaikan platform e-commerce kami tepat waktu dan sesuai anggaran. Situs ini cepat, aman, dan ramah pengguna. Penjualan kami meningkat 40% sejak diluncurkan!">
+                  Working with BorneoWebmu was an absolute pleasure. They delivered our e-commerce platform on time and within budget. The site is fast, secure, and user-friendly. Our sales have increased by 40% since launch!
+                </p>
+              </div>
+              <div class="client-info">
+                <div class="client-avatar">
+                  <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face" alt="Sarah Chen" />
+                </div>
+                <div class="client-details">
+                  <h4 class="client-name">Sarah Chen</h4>
+                  <p class="client-title" data-en="Founder, Borneo Crafts" data-id="Pendiri, Borneo Crafts">Founder, Borneo Crafts</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card" data-testimonial="3">
+              <div class="testimonial-content">
+                <div class="quote-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                  </svg>
+                </div>
+                <div class="stars">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+                <p class="testimonial-text" data-en="The team at BorneoWebmu is incredibly talented and responsive. They understood our vision perfectly and brought it to life with stunning design and flawless functionality. Highly recommended for any web development needs!" data-id="Tim di BorneoWebmu sangat berbakat dan responsif. Mereka memahami visi kami dengan sempurna dan mewujudkannya dengan desain yang menakjubkan dan fungsionalitas yang sempurna. Sangat direkomendasikan untuk kebutuhan pengembangan web!">
+                  The team at BorneoWebmu is incredibly talented and responsive. They understood our vision perfectly and brought it to life with stunning design and flawless functionality. Highly recommended for any web development needs!
+                </p>
+              </div>
+              <div class="client-info">
+                <div class="client-avatar">
+                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="David Tan" />
+                </div>
+                <div class="client-details">
+                  <h4 class="client-name">David Tan</h4>
+                  <p class="client-title" data-en="Marketing Director, Green Solutions" data-id="Direktur Pemasaran, Green Solutions">Marketing Director, Green Solutions</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Navigation -->
+          <div class="testimonials-nav">
+            <button class="nav-dot active" data-slide="1" aria-label="View testimonial 1"></button>
+            <button class="nav-dot" data-slide="2" aria-label="View testimonial 2"></button>
+            <button class="nav-dot" data-slide="3" aria-label="View testimonial 3"></button>
+          </div>
+
+          <button class="nav-arrow nav-prev" aria-label="Previous testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15,18 9,12 15,6"></polyline>
+            </svg>
+          </button>
+          
+          <button class="nav-arrow nav-next" aria-label="Next testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9,18 15,12 9,6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-en="Our Portfolio" data-id="Portofolio Kami">Our Portfolio</h2>
+          <p class="section-description" data-en="Explore our recent projects and see how we've helped businesses transform their digital presence." data-id="Jelajahi proyek terbaru kami dan lihat bagaimana kami membantu bisnis mengubah kehadiran digital mereka.">
+            Explore our recent projects and see how we've helped businesses transform their digital presence.
+          </p>
+        </div>
+        
+        <div class="portfolio-grid">
+          <article class="portfolio-post">
+            <img src="Portfolio/SMA.png" alt="SMA SANTO PAULUS NYARUMKOP" class="portfolio-image" />
+            <div class="portfolio-content">
+              <h3 class="portfolio-title" data-en="SMA SANTO PAULUS NYARUMKOP" data-id="SMA SANTO PAULUS NYARUMKOP">SMA SANTO PAULUS NYARUMKOP</h3>
+              <time datetime="2023-12-10" class="portfolio-date" data-en="December 10, 2023" data-id="10 Desember 2023">December 10, 2023</time>
+              <p class="portfolio-excerpt" data-en="Catholic high school website in Singkawang" data-id="Website sekolah menengah Katolik di Singkawang">
+                Catholic high school website in Singkawang.
+              </p>
+              <a href="https://www.smasantopaulusskw.id/" target="_blank" rel="noopener noreferrer" class="portfolio-readmore" data-en="View Project" data-id="Lihat Proyek">View Project</a>
+            </div>
+          </article>
+          
+          <article class="portfolio-post">
+            <img src="Portfolio/MINESAFETY.png" alt="MINE SAFETY" class="portfolio-image" />
+            <div class="portfolio-content">
+              <h3 class="portfolio-title" data-en="MINE SAFETY" data-id="MINE SAFETY">MINE SAFETY</h3>
+              <time datetime="2023-11-05" class="portfolio-date" data-en="November 5, 2023" data-id="5 November 2023">November 5, 2023</time>
+              <p class="portfolio-excerpt" data-en="Mining safety information media website" data-id="Website media informasi keselamatan kerja tambang">
+                Mining safety information media website.
+              </p>
+              <a href="https://www.minesafety.id/" target="_blank" rel="noopener noreferrer" class="portfolio-readmore" data-en="View Project" data-id="Lihat Proyek">View Project</a>
+            </div>
+          </article>
+          
+          <article class="portfolio-post">
+            <img src="Portfolio/INDOTRIBUNE.png" alt="Indotribune" class="portfolio-image" />
+            <div class="portfolio-content">
+              <h3 class="portfolio-title" data-en="Indotribune" data-id="Indotribune">Indotribune</h3>
+              <time datetime="2023-07-01" class="portfolio-date" data-en="July 1, 2023" data-id="1 Juli 2023">July 1, 2023</time>
+              <p class="portfolio-excerpt" data-en="Multi-segment national news portal website" data-id="Website portal berita nasional multisegmentasi">
+                Multi-segment national news portal website.
+              </p>
+              <a href="https://www.indotribune.com/" target="_blank" rel="noopener noreferrer" class="portfolio-readmore" data-en="View Project" data-id="Lihat Proyek">View Project</a>
+            </div>
+          </article>
+          
+          <article class="portfolio-post">
+            <img src="Portfolio/SCF.png" alt="SCF" class="portfolio-image" />
+            <div class="portfolio-content">
+              <h3 class="portfolio-title" data-en="SCF" data-id="SCF">SCF</h3>
+              <time datetime="2023-12-10" class="portfolio-date" data-en="December 10, 2023" data-id="10 Desember 2023">December 10, 2023</time>
+              <p class="portfolio-excerpt" data-en="Social and environmental organization website" data-id="Website organisasi sosial dan lingkungan">
+                Social and environmental organization website.
+              </p>
+              <a href="https://scf.or.id/" target="_blank" rel="noopener noreferrer" class="portfolio-readmore" data-en="View Project" data-id="Lihat Proyek">View Project</a>
+            </div>
+          </article>
+          
+          <article class="portfolio-post">
+            <img src="Portfolio/IKAN BORNEO.png" alt="Ikan Borneo" class="portfolio-image" />
+            <div class="portfolio-content">
+              <h3 class="portfolio-title" data-en="Ikan Borneo" data-id="Ikan Borneo">Ikan Borneo</h3>
+              <time datetime="2023-11-05" class="portfolio-date" data-en="November 5, 2023" data-id="5 November 2023">November 5, 2023</time>
+              <p class="portfolio-excerpt" data-en="Educational media website about Borneo freshwater fish" data-id="Website media edukasi tentang ikan air tawar Borneo">
+                Educational media website about Borneo freshwater fish.
+              </p>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="portfolio-readmore" data-en="View Project" data-id="Lihat Proyek">View Project</a>
+            </div>
+          </article>
+          
+          <article class="portfolio-post">
+            <img src="Portfolio/IKN.png" alt="E-commerce Platform" class="portfolio-image" />
+            <div class="portfolio-content">
+              <h3 class="portfolio-title" data-en="IKN TIME" data-id="IKN TIME">IKN TIME</h3>
+              <time datetime="2023-10-01" class="portfolio-date" data-en="October 1, 2023" data-id="1 Oktober 2023">October 1, 2023</time>
+              <p class="portfolio-excerpt" data-en="Modern News web" data-id="Web Berita Moderen">
+                Modern News web.
+              </p>
+              <a href="https://www.ikntime.com/" target="_blank" rel="noopener noreferrer" class="portfolio-readmore" data-en="View Project" data-id="Lihat Proyek">View Project</a>
+            </div>
+          </article>
+          
+          <!-- Hidden portfolio items -->
+          <article class="portfolio-post hidden">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop" alt="CRM System" class="portfolio-image" />
+            <div class="portfolio-content">
+              <h3 class="portfolio-title" data-en="Custom CRM System" data-id="Sistem CRM Kustom">Custom CRM System</h3>
+              <time datetime="2023-09-15" class="portfolio-date" data-en="September 15, 2023" data-id="15 September 2023">September 15, 2023</time>
+              <p class="portfolio-excerpt" data-en="Custom CRM system for small businesses" data-id="Sistem CRM khusus untuk bisnis kecil">
+                Custom CRM system for small businesses.
+              </p>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="portfolio-readmore" data-en="View Project" data-id="Lihat Proyek">View Project</a>
+            </div>
+          </article>
+          
+          
+        </div>
+        
+        <div class="portfolio-actions">
+          <button id="see-more-btn" class="btn btn-outline" aria-expanded="false" aria-controls="portfolio" aria-label="See more portfolio items">
+            <span data-en="See More Projects" data-id="Lihat Lebih Banyak Proyek">See More Projects</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-en="Ready to Start Your Project?" data-id="Siap Memulai Proyek Anda?">Ready to Start Your Project?</h2>
+          <p class="section-description" data-en="Let's discuss your ideas and bring them to life with our expert team." data-id="Mari diskusikan ide Anda dan wujudkan dengan tim ahli kami.">
+            Let's discuss your ideas and bring them to life with our expert team.
+          </p>
+        </div>
+        
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h4 data-en="Location" data-id="Lokasi">Location</h4>
+                <p data-en="Jl Yam Sabran, Tj Hulu, Pontianak Timur, Kalimantan Barat, Indonesia. (78137)" data-id="Jl Yam Sabran, Tj Hulu, Pontianak Timur, Kalimantan Barat, Indonesia. (78137)">Jl Yam Sabran, tj Hulu, Pontianak Timur, Kalimantan Barat, Indonesia</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h4 data-en="Phone" data-id="Telepon">Phone</h4>
+                <p>+62 895 1792 22178</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h4 data-en="Email" data-id="Email">Email</h4>
+                <p>borneowebmu@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-actions">
+            <a
+              href="https://wa.me/6289517922178?text=Hello!%20I%20would%20like%20to%20discuss%20a%20web%20development%20project."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary btn-large"
+            >
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+              </svg>
+              <span data-en="Start Your Project" data-id="Mulai Proyek Anda">Start Your Project</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon">
+              <a href="#home" class="logo">
+        <img src="Asset/Logo.png" alt="BorneoWebmu Logo" class="logo-image" />
+        
+      </a>
+            </div>
+            <span class="logo-text">BorneoWebmu</span>
+          </div>
+          <p class="footer-description" data-en="Creating Digital Identity" data-id="Menciptakan Identitas Digital">
+            Creating Digital Identity
+          </p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4 data-en="Services" data-id="Layanan">Services</h4>
+            <ul>
+              <li><a href="#services" data-en="Web Development" data-id="Pengembangan Web">Web Development</a></li>
+              <li><a href="#services" data-en="UI/UX Design" data-id="Desain UI/UX">UI/UX Design</a></li>
+              <li><a href="#services" data-en="E-Commerce" data-id="E-Commerce">E-Commerce</a></li>
+              <li><a href="#services" data-en="CMS Development" data-id="Pengembangan CMS">CMS Development</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4 data-en="Company" data-id="Perusahaan">Company</h4>
+            <ul>
+              <li><a href="about.html" data-en="About Us" data-id="Tentang Kami">About Us</a></li>
+              <li><a href="#testimonials" data-en="Testimonials" data-id="Testimoni">Testimonials</a></li>
+              <li><a href="#contact" data-en="Contact" data-id="Kontak">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4 data-en="Contact Info" data-id="Info Kontak">Contact Info</h4>
+            <ul>
+              <li>+62 895 1792 22178</li>
+              <li>borneowebmu@gmail.com</li>
+              <li data-en="Jl Yam Sabran, Tj Hulu, Pontianak Timur, Kalimantan Barat, Indonesia. (78137)" data-id="Jl Yam Sabran, Tj Hulu, Pontianak Timur, Kalimantan Barat, Indonesia. (78137)">Borneo, Indonesia</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 BorneoWebmu. <span data-en="All rights reserved." data-id="Semua hak dilindungi.">All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a
+    href="https://wa.me/6289517922178?text=Hello!%20I%20would%20like%20to%20discuss%20a%20web%20development%20project."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whatsapp-float"
+    aria-label="Contact us on WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+    </svg>
+  </a>
+</body>
+</html>
+
