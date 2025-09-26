@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help Center - BorneoWebmu</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Asset/Logo.png" />
+  <link rel="apple-touch-icon" type="image/png" href="Asset/Logo.png" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Help Center - BorneoWebmu" />
+  <meta property="og:description" content="Get help and support for your web development projects with BorneoWebmu's comprehensive help center." />
+  <meta property="og:image" content="Asset/Borneo Webmu.png" />
+  <meta property="og:url" content="https://borneowebmu.com/help-center" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="BorneoWebmu" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Help Center - BorneoWebmu" />
+  <meta name="twitter:description" content="Get help and support for your web development projects." />
+  <meta name="twitter:image" content="Asset/Borneo Webmu.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Background Elements -->
+  <div class="bg-elements">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+    <div class="gradient-overlay"></div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">
+        <img src="Asset/Borneo Webmu.png" alt="BorneoWebmu Logo" class="logo-image" />
+        <span class="logo-text">BorneoWebmu</span>
+      </a>
+
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#packages" class="nav-link">Packages</a></li>
+        <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="index.html#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li class="lang-switcher">
+          <button id="lang-en" class="lang-btn active" aria-label="Switch to English">EN</button>
+          <button id="lang-id" class="lang-btn" aria-label="Switch to Indonesian">ID</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="help-hero">
+      <div class="container">
+        <div class="help-hero-content">
+          <div class="help-badge" data-en="Help & Support" data-id="Bantuan & Dukungan">
+            Help & Support
+          </div>
+          <h1 class="help-title" data-en="How can we help you today?" data-id="Bagaimana kami dapat membantu Anda hari ini?">
+            How can we help you today?
+          </h1>
+          <p class="help-subtitle" data-en="Find answers to common questions and get the support you need for your web development project." data-id="Temukan jawaban atas pertanyaan umum dan dapatkan dukungan yang Anda butuhkan untuk proyek pengembangan web Anda.">
+            Find answers to common questions and get the support you need for your web development project.
+          </p>
+
+          <!-- Search Bar -->
+          <div class="help-search">
+            <div class="search-container">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="M21 21l-4.35-4.35"/>
+              </svg>
+              <input
+                type="text"
+                id="help-search"
+                placeholder="Search for help..."
+                data-en-placeholder="Search for help..."
+                data-id-placeholder="Cari bantuan..."
+                class="search-input"
+              />
+              <button class="search-btn" aria-label="Search">
+                <span data-en="Search" data-id="Cari">Search</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Help Section -->
+    <section class="quick-help-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-en="Quick Help" data-id="Bantuan Cepat">Quick Help</h2>
+          <p class="section-description" data-en="Get instant answers to the most common questions." data-id="Dapatkan jawaban instan untuk pertanyaan yang paling umum.">
+            Get instant answers to the most common questions.
+          </p>
+        </div>
+
+        <div class="quick-help-grid">
+          <div class="quick-help-card">
+            <div class="quick-help-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h4"/>
+                <path d="M15 13h4a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-4"/>
+                <path d="M12 8V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v4"/>
+                <path d="M12 16v4a2 2 0 0 1 2 2h4a2 2 0 0 1 2-2v-4"/>
+              </svg>
+            </div>
+            <h3 data-en="Getting Started" data-id="Memulai">Getting Started</h3>
+            <p data-en="New to BorneoWebmu? Learn how to get started with your web development project." data-id="Baru di BorneoWebmu? Pelajari cara memulai proyek pengembangan web Anda.">
+              New to BorneoWebmu? Learn how to get started with your web development project.
+            </p>
+            <a href="#getting-started" class="quick-help-link" data-en="Learn More" data-id="Pelajari Lebih Lanjut">Learn More</a>
+          </div>
+
+          <div class="quick-help-card">
+            <div class="quick-help-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <h3 data-en="Pricing & Packages" data-id="Harga & Paket">Pricing & Packages</h3>
+            <p data-en="Compare our packages and find the perfect solution for your business needs." data-id="Bandingkan paket kami dan temukan solusi sempurna untuk kebutuhan bisnis Anda.">
+              Compare our packages and find the perfect solution for your business needs.
+            </p>
+            <a href="#pricing" class="quick-help-link" data-en="View Packages" data-id="Lihat Paket">View Packages</a>
+          </div>
+
+          <div class="quick-help-card">
+            <div class="quick-help-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.828 14.828a4 4 0 0 1-5.656 0"/>
+                <path d="M9 9a3 3 0 1 1 6 0c0 1.657-1.343 3-3 3s-3-1.343-3-3z"/>
+                <path d="M2 12h4m-4 4h4m-4-8h4"/>
+                <path d="M18 12h4m-4 4h4m-4-8h4"/>
+              </svg>
+            </div>
+            <h3 data-en="Technical Support" data-id="Dukungan Teknis">Technical Support</h3>
+            <p data-en="Need technical assistance? Our support team is here to help you resolve issues." data-id="Butuh bantuan teknis? Tim dukungan kami siap membantu Anda menyelesaikan masalah.">
+              Need technical assistance? Our support team is here to help you resolve issues.
+            </p>
+            <a href="#technical-support" class="quick-help-link" data-en="Get Support" data-id="Dapatkan Dukungan">Get Support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-en="Frequently Asked Questions" data-id="Pertanyaan yang Sering Diajukan">Frequently Asked Questions</h2>
+          <p class="section-description" data-en="Find answers to the most commonly asked questions about our services." data-id="Temukan jawaban atas pertanyaan yang paling sering diajukan tentang layanan kami.">
+            Find answers to the most commonly asked questions about our services.
+          </p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+              <span data-en="How long does it take to complete a website project?" data-id="Berapa lama waktu yang dibutuhkan untuk menyelesaikan proyek website?">
+                How long does it take to complete a website project?
+              </span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6,9 12,15 18,9"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-1" aria-hidden="true">
+              <p data-en="Project timelines vary depending on complexity and package chosen. Basic websites typically take 1-2 weeks, Pro packages take 2-4 weeks, and Enterprise projects can take 4-8 weeks or more. We'll provide a detailed timeline during our initial consultation." data-id="Jadwal proyek bervariasi tergantung pada kompleksitas dan paket yang dipilih. Website dasar biasanya memakan waktu 1-2 minggu, paket Pro memakan waktu 2-4 minggu, dan proyek Enterprise dapat memakan waktu 4-8 minggu atau lebih. Kami akan memberikan jadwal terperinci selama konsultasi awal.">
+                Project timelines vary depending on complexity and package chosen. Basic websites typically take 1-2 weeks, Pro packages take 2-4 weeks, and Enterprise projects can take 4-8 weeks or more. We'll provide a detailed timeline during our initial consultation.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+              <span data-en="Do you provide ongoing maintenance and support?" data-id="Apakah Anda menyediakan pemeliharaan dan dukungan berkelanjutan?">
+                Do you provide ongoing maintenance and support?
+              </span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6,9 12,15 18,9"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-2" aria-hidden="true">
+              <p data-en="Yes, all our packages include support periods. Basic includes 1 month, Pro includes 3 months, and Enterprise includes 6 months of free support and maintenance. After this period, we offer affordable maintenance packages to keep your website updated and secure." data-id="Ya, semua paket kami menyertakan periode dukungan. Basic menyertakan 1 bulan, Pro menyertakan 3 bulan, dan Enterprise menyertakan 6 bulan dukungan dan pemeliharaan gratis. Setelah periode ini, kami menawarkan paket pemeliharaan terjangkau untuk menjaga website Anda tetap terupdate dan aman.">
+                Yes, all our packages include support periods. Basic includes 1 month, Pro includes 3 months, and Enterprise includes 6 months of free support and maintenance. After this period, we offer affordable maintenance packages to keep your website updated and secure.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+              <span data-en="Can I update the content on my website myself?" data-id="Bisakah saya memperbarui konten di website saya sendiri?">
+                Can I update the content on my website myself?
+              </span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6,9 12,15 18,9"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-3" aria-hidden="true">
+              <p data-en="Absolutely! We build websites with user-friendly Content Management Systems (CMS) that allow you to easily update text, images, and content without technical knowledge. We'll provide training and documentation to help you manage your website effectively." data-id="Tentu saja! Kami membangun website dengan Sistem Manajemen Konten (CMS) yang mudah digunakan yang memungkinkan Anda dengan mudah memperbarui teks, gambar, dan konten tanpa pengetahuan teknis. Kami akan memberikan pelatihan dan dokumentasi untuk membantu Anda mengelola website secara efektif.">
+                Absolutely! We build websites with user-friendly Content Management Systems (CMS) that allow you to easily update text, images, and content without technical knowledge. We'll provide training and documentation to help you manage your website effectively.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+              <span data-en="What technologies do you use for web development?" data-id="Teknologi apa yang Anda gunakan untuk pengembangan web?">
+                What technologies do you use for web development?
+              </span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6,9 12,15 18,9"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-4" aria-hidden="true">
+              <p data-en="We use modern, industry-standard technologies including HTML5, CSS3, JavaScript, React, Node.js, PHP, and various CMS platforms like WordPress and custom solutions. We choose the best technology stack based on your specific needs and project requirements." data-id="Kami menggunakan teknologi modern dan standar industri termasuk HTML5, CSS3, JavaScript, React, Node.js, PHP, dan berbagai platform CMS seperti WordPress dan solusi khusus. Kami memilih stack teknologi terbaik berdasarkan kebutuhan spesifik dan persyaratan proyek Anda.">
+                We use modern, industry-standard technologies including HTML5, CSS3, JavaScript, React, Node.js, PHP, and various CMS platforms like WordPress and custom solutions. We choose the best technology stack based on your specific needs and project requirements.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+              <span data-en="Do you offer e-commerce functionality?" data-id="Apakah Anda menawarkan fungsionalitas e-commerce?">
+                Do you offer e-commerce functionality?
+              </span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6,9 12,15 18,9"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-5" aria-hidden="true">
+              <p data-en="Yes, our Pro and Enterprise packages include e-commerce functionality. We can integrate various payment gateways, shopping cart systems, inventory management, and other e-commerce features. We work with popular platforms like WooCommerce, Shopify, and custom solutions." data-id="Ya, paket Pro dan Enterprise kami menyertakan fungsionalitas e-commerce. Kami dapat mengintegrasikan berbagai gateway pembayaran, sistem keranjang belanja, manajemen inventaris, dan fitur e-commerce lainnya. Kami bekerja dengan platform populer seperti WooCommerce, Shopify, dan solusi khusus.">
+                Yes, our Pro and Enterprise packages include e-commerce functionality. We can integrate various payment gateways, shopping cart systems, inventory management, and other e-commerce features. We work with popular platforms like WooCommerce, Shopify, and custom solutions.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-6">
+              <span data-en="What is included in your SEO optimization?" data-id="Apa yang termasuk dalam optimisasi SEO Anda?">
+                What is included in your SEO optimization?
+              </span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6,9 12,15 18,9"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-6" aria-hidden="true">
+              <p data-en="Our SEO optimization includes keyword research, meta tags optimization, site structure improvement, mobile optimization, page speed optimization, XML sitemap creation, robots.txt setup, and basic analytics integration. Enterprise packages include advanced SEO strategies and ongoing optimization." data-id="Optimisasi SEO kami meliputi riset kata kunci, optimisasi meta tag, perbaikan struktur situs, optimisasi mobile, optimisasi kecepatan halaman, pembuatan sitemap XML, pengaturan robots.txt, dan integrasi analitik dasar. Paket Enterprise menyertakan strategi SEO lanjutan dan optimisasi berkelanjutan.">
+                Our SEO optimization includes keyword research, meta tags optimization, site structure improvement, mobile optimization, page speed optimization, XML sitemap creation, robots.txt setup, and basic analytics integration. Enterprise packages include advanced SEO strategies and ongoing optimization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section id="getting-started" class="getting-started-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-en="Getting Started Guide" data-id="Panduan Memulai">Getting Started Guide</h2>
+          <p class="section-description" data-en="Follow these steps to get your web development project started successfully." data-id="Ikuti langkah-langkah ini untuk memulai proyek pengembangan web Anda dengan sukses.">
+            Follow these steps to get your web development project started successfully.
+          </p>
+        </div>
+
+        <div class="steps-container">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3 data-en="Contact Us" data-id="Hubungi Kami">Contact Us</h3>
+              <p data-en="Reach out via WhatsApp, email, or phone to discuss your project requirements and vision." data-id="Hubungi kami melalui WhatsApp, email, atau telepon untuk mendiskusikan persyaratan proyek dan visi Anda.">
+                Reach out via WhatsApp, email, or phone to discuss your project requirements and vision.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3 data-en="Choose Package" data-id="Pilih Paket">Choose Package</h3>
+              <p data-en="Select the package that best fits your needs and budget from our Basic, Pro, or Enterprise options." data-id="Pilih paket yang paling sesuai dengan kebutuhan dan anggaran Anda dari opsi Basic, Pro, atau Enterprise kami.">
+                Select the package that best fits your needs and budget from our Basic, Pro, or Enterprise options.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3 data-en="Project Planning" data-id="Perencanaan Proyek">Project Planning</h3>
+              <p data-en="We'll create a detailed project plan including timeline, milestones, and deliverables based on your requirements." data-id="Kami akan membuat rencana proyek terperinci termasuk timeline, milestone, dan deliverables berdasarkan persyaratan Anda.">
+                We'll create a detailed project plan including timeline, milestones, and deliverables based on your requirements.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3 data-en="Design & Development" data-id="Desain & Pengembangan">Design & Development</h3>
+              <p data-en="Our team will design and develop your website according to the approved plan and specifications." data-id="Tim kami akan mendesain dan mengembangkan website Anda sesuai dengan rencana dan spesifikasi yang disetujui.">
+                Our team will design and develop your website according to the approved plan and specifications.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h3 data-en="Review & Launch" data-id="Tinjau & Luncurkan">Review & Launch</h3>
+              <p data-en="Review the final product, request any revisions, and launch your new website to the world." data-id="Tinjau produk akhir, minta revisi apa pun, dan luncurkan website baru Anda ke dunia.">
+                Review the final product, request any revisions, and launch your new website to the world.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Support Section -->
+    <section id="contact-support" class="contact-support-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-en="Need More Help?" data-id="Butuh Bantuan Lebih Lanjut?">Need More Help?</h2>
+          <p class="section-description" data-en="Can't find what you're looking for? Our support team is ready to assist you." data-id="Tidak dapat menemukan apa yang Anda cari? Tim dukungan kami siap membantu Anda.">
+            Can't find what you're looking for? Our support team is ready to assist you.
+          </p>
+        </div>
+
+        <div class="support-content">
+          <div class="support-info">
+            <div class="support-item">
+              <div class="support-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="support-details">
+                <h4 data-en="Phone Support" data-id="Dukungan Telepon">Phone Support</h4>
+                <p>+62 895-1792-22178</p>
+                <p data-en="Available Monday - Friday, 9 AM - 6 PM WIB" data-id="Tersedia Senin - Jumat, 09.00 - 18.00 WIB">
+                  Available Monday - Friday, 9 AM - 6 PM WIB
+                </p>
+              </div>
+            </div>
+
+            <div class="support-item">
+              <div class="support-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="support-details">
+                <h4 data-en="Email Support" data-id="Dukungan Email">Email Support</h4>
+                <p>info@borneowebmu.com</p>
+                <p data-en="We respond within 24 hours" data-id="Kami merespons dalam 24 jam">
+                  We respond within 24 hours
+                </p>
+              </div>
+            </div>
+
+            <div class="support-item">
+              <div class="support-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                </svg>
+              </div>
+              <div class="support-details">
+                <h4 data-en="WhatsApp Support" data-id="Dukungan WhatsApp">WhatsApp Support</h4>
+                <p>+62 895-1792-22178</p>
+                <p data-en="Quick responses during business hours" data-id="Respons cepat selama jam kerja">
+                  Quick responses during business hours
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="support-cta">
+            <h3 data-en="Get in Touch" data-id="Hubungi Kami">Get in Touch</h3>
+            <p data-en="Ready to start your project or need immediate assistance? Contact us now!" data-id="Siap memulai proyek Anda atau butuh bantuan segera? Hubungi kami sekarang!">
+              Ready to start your project or need immediate assistance? Contact us now!
+            </p>
+            <div class="support-buttons">
+              <a
+                href="https://wa.me/6289517922178?text=Hello!%20I%20need%20help%20with%20my%20web%20development%20project."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-large"
+                aria-label="Contact us via WhatsApp"
+              >
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                </svg>
+                <span data-en="WhatsApp Us" data-id="WhatsApp Kami">WhatsApp Us</span>
+              </a>
+              <a href="mailto:info@borneowebmu.com" class="btn btn-secondary btn-large">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span data-en="Send Email" data-id="Kirim Email">Send Email</span>
+              </a>
+            </div>
