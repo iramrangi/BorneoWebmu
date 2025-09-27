@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ - BorneoWebmu</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Asset/Logo.png" />
+  <link rel="apple-touch-icon" type="image/png" href="Asset/Logo.png" />
+
+  <!-- Open Graph Meta Tags for Google/Social Media -->
+  <meta property="og:title" content="FAQ - BorneoWebmu" />
+  <meta property="og:description" content="Frequently asked questions about BorneoWebmu's web development services, pricing, and process." />
+  <meta property="og:image" content="Asset/Borneo Webmu.png" />
+  <meta property="og:url" content="https://borneowebmu.com/faq" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="BorneoWebmu" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FAQ - BorneoWebmu" />
+  <meta name="twitter:description" content="Frequently asked questions about BorneoWebmu's web development services, pricing, and process." />
+  <meta name="twitter:image" content="Asset/Borneo Webmu.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Background Elements -->
+  <div class="bg-elements">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+    <div class="gradient-overlay"></div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">
+        <img src="Asset/Borneo Webmu.png" alt="BorneoWebmu Logo" class="logo-image" />
+        <span class="logo-text">BorneoWebmu</span>
+      </a>
+
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#packages" class="nav-link">Packages</a></li>
+        <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="index.html#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li class="lang-switcher">
+          <button id="lang-en" class="lang-btn active" aria-label="Switch to English">EN</button>
+          <button id="lang-id" class="lang-btn" aria-label="Switch to Indonesian">ID</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- FAQ Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content container">
+        <div class="hero-badge" data-en="Support" data-id="Dukungan">
+          Support
+        </div>
+        <h1 class="hero-title">
+          <span data-en="Frequently" data-id="Pertanyaan">Frequently</span>
+          <span data-en="Asked" data-id="yang">Asked</span>
+          <span data-en="Questions" data-id="Sering">Questions</span>
+        </h1>
+        <p class="hero-subtitle" data-en="Find answers to common questions about our web development services, pricing, and process." data-id="Temukan jawaban untuk pertanyaan umum tentang layanan pengembangan web, harga, dan proses kami.">
+          Find answers to common questions about our web development services, pricing, and process.
+        </p>
+        <div class="hero-actions">
+          <a href="index.html#contact" class="btn btn-primary">
+            <span data-en="Contact Us" data-id="Hubungi Kami">Contact Us</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="index.html" class="btn btn-secondary">
+            <span data-en="Back to Home" data-id="Kembali ke Beranda">Back to Home</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-content">
+          <div class="faq-header">
+            <p class="last-updated" data-en="Last updated: January 1, 2024" data-id="Terakhir diperbarui: 1 Januari 2024">
+              Last updated: January 1, 2024
+            </p>
+          </div>
+
+          <div class="faq-category">
+            <h2 data-en="General Questions" data-id="Pertanyaan Umum">General Questions</h2>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3 data-en="What services does BorneoWebmu offer?" data-id="Layanan apa yang ditawarkan BorneoWebmu?">What services does BorneoWebmu offer?</h3>
+                <button class="faq-toggle" aria-expanded="false">
+                  <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p data-en="BorneoWebmu specializes in comprehensive web development services including custom website development, UI/UX design, CMS development, e-commerce solutions, website maintenance, and digital marketing support. We create modern, responsive websites that help businesses grow online." data-id="BorneoWebmu mengkhususkan diri dalam layanan pengembangan web yang komprehensif termasuk pengembangan website kustom, desain UI/UX, pengembangan CMS, solusi e-commerce, pemeliharaan website, dan dukungan pemasaran digital. Kami membuat website modern dan responsif yang membantu bisnis berkembang secara online.">
+                  BorneoWebmu specializes in comprehensive web development services including custom website development, UI/UX design, CMS development, e-commerce solutions, website maintenance, and digital marketing support. We create modern, responsive websites that help businesses grow online.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3 data-en="How long does it take to complete a website project?" data-id="Berapa lama waktu yang dibutuhkan untuk menyelesaikan proyek website?">How long does it take to complete a website project?</h3>
+                <button class="faq-toggle" aria-expanded="false">
+                  <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p data-en="Project timelines vary depending on complexity and requirements. A simple website typically takes 2-4 weeks, while more complex projects with custom features, e-commerce functionality, or extensive content management systems may take 6-12 weeks. We'll provide a detailed timeline during our initial consultation." data-id="Jadwal proyek bervariasi tergantung pada kompleksitas dan persyaratan. Website sederhana biasanya membutuhkan 2-4 minggu, sementara proyek yang lebih kompleks dengan fitur khusus, fungsionalitas e-commerce, atau sistem manajemen konten yang ekstensif mungkin membutuhkan 6-12 minggu. Kami akan memberikan timeline yang detail selama konsultasi awal.">
+                  Project timelines vary depending on complexity and requirements. A simple website typically takes 2-4 weeks, while more complex projects with custom features, e-commerce functionality, or extensive content management systems may take 6-12 weeks. We'll provide a detailed timeline during our initial consultation.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3 data-en="Do you provide ongoing website maintenance?" data-id="Apakah Anda menyediakan pemeliharaan website berkelanjutan?">Do you provide ongoing website maintenance?</h3>
+                <button class="faq-toggle" aria-expanded="false">
+                  <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p data-en="Yes, we offer comprehensive website maintenance packages that include regular updates, security monitoring, content updates, performance optimization, and technical support. Our maintenance plans ensure your website stays secure, fast, and up-to-date with the latest technologies." data-id="Ya, kami menawarkan paket pemeliharaan website yang komprehensif yang mencakup pembaruan rutin, pemantauan keamanan, pembaruan konten, optimasi performa, dan dukungan teknis. Paket pemeliharaan kami memastikan website Anda tetap aman, cepat, dan up-to-date dengan teknologi terbaru.">
+                  Yes, we offer comprehensive website maintenance packages that include regular updates, security monitoring, content updates, performance optimization, and technical support. Our maintenance plans ensure your website stays secure, fast, and up-to-date with the latest technologies.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-category">
+            <h2 data-en="Pricing & Packages" data-id="Harga & Paket">Pricing & Packages</h2>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3 data-en="How much does a website cost?" data-id="Berapa biaya untuk membuat website?">How much does a website cost?</h3>
+                <button class="faq-toggle" aria-expanded="false">
+                  <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p data-en="Our pricing varies based on project complexity and requirements. We offer packages starting from affordable basic websites to comprehensive enterprise solutions. During our consultation, we'll discuss your specific needs and provide a customized quote that fits your budget and goals." data-id="Harga kami bervariasi berdasarkan kompleksitas proyek dan persyaratan. Kami menawarkan paket mulai dari website dasar yang terjangkau hingga solusi enterprise yang komprehensif. Selama konsultasi, kami akan membahas kebutuhan spesifik Anda dan memberikan penawaran yang disesuaikan dengan anggaran dan tujuan Anda.">
+                  Our pricing varies based on project complexity and requirements. We offer packages starting from affordable basic websites to comprehensive enterprise solutions. During our consultation, we'll discuss your specific needs and provide a customized quote that fits your budget and goals.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3 data-en="What is your payment structure?" data-id="Bagaimana struktur pembayaran Anda?">What is your payment structure?</h3>
+                <button class="faq-toggle" aria-expanded="false">
+                  <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p data-en="We require a 50% deposit to begin the project, with the remaining 50% due upon completion and before final delivery. For larger projects, we may offer milestone-based payments. All payments are processed securely, and we provide detailed invoices for transparency." data-id="Kami memerlukan deposit 50% untuk memulai proyek, dengan sisa 50% jatuh tempo setelah selesai dan sebelum pengiriman final. Untuk proyek yang lebih besar, kami mungkin menawarkan pembayaran berbasis milestone. Semua pembayaran diproses dengan aman, dan kami menyediakan faktur yang detail untuk transparansi.">
+                  We require a 50% deposit to begin the project, with the remaining 50% due upon completion and before final delivery. For larger projects, we may offer milestone-based payments. All payments are processed securely, and we provide detailed invoices for transparency.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3 data-en="Do you offer refunds?" data-id="Apakah Anda menawarkan pengembalian dana?">Do you offer refunds?</h3>
+                <button class="faq-toggle" aria-expanded="false">
+                  <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p data-en="We stand behind our work and offer a satisfaction guarantee. If you're not satisfied with the initial design concepts or direction, we allow revisions within the agreed scope. However, due to the custom nature of our services, we do not offer refunds once development has begun, as significant time and resources have been invested." data-id="Kami mendukung pekerjaan kami dan menawarkan jaminan kepuasan. Jika Anda tidak puas dengan konsep desain awal atau arah, kami mengizinkan revisi dalam ruang lingkup yang disepakati. Namun, karena sifat kustom layanan kami, kami tidak menawarkan pengembalian dana setelah pengembangan dimulai, karena waktu dan sumber daya yang signifikan telah diinvestasikan.">
+                  We stand behind our work and offer a satisfaction guarantee. If you're not satisfied with the initial design concepts or direction, we allow revisions within the agreed scope. However, due to the custom nature of our services, we do not offer refunds once development has begun, as significant time and resources have been invested.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-category">
+            <h2 data-en="Technical Questions" data-id="Pertanyaan Teknis">Technical Questions</h2>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3 data-en="What technologies do you use?" data-id="Teknologi apa yang Anda gunakan?">What technologies do you use?</h3>
+                <button class="faq-toggle" aria-expanded="false">
+                  <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p data-en="We use modern, industry-standard technologies including HTML5, CSS3, JavaScript, React, Vue.js, Node.js, PHP, Laravel, WordPress, and various databases like MySQL and MongoDB. We choose the best technology stack based on your project requirements, scalability needs, and long-term maintenance considerations." data-id="Kami menggunakan teknologi modern dan standar industri termasuk HTML5, CSS3, JavaScript, React, Vue.js, Node.js, PHP, Laravel, WordPress, dan berbagai database seperti MySQL dan MongoDB. Kami memilih stack teknologi terbaik berdasarkan persyaratan proyek Anda, kebutuhan skalabilitas, dan pertimbangan pemeliharaan jangka panjang.">
+                  We use modern, industry-standard technologies including HTML5, CSS3, JavaScript, React, Vue.js, Node.js, PHP, Laravel, WordPress, and various databases like MySQL and MongoDB. We choose the best technology stack based on your project requirements, scalability needs, and long-term maintenance considerations.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3 data-en="Will my website be mobile-friendly?" data-id="Apakah website saya akan mobile-friendly?">Will my website be mobile-friendly?</h3>
+                <button class="faq-toggle" aria-expanded="false">
+                  <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p data-en="Absolutely! All websites we develop are fully responsive and mobile-optimized. We ensure your website looks and functions perfectly on all devices including smartphones, tablets, laptops, and desktop computers. Mobile-friendliness is essential for user experience and search engine optimization." data-id="Tentu saja! Semua website yang kami kembangkan sepenuhnya responsif dan dioptimalkan untuk mobile. Kami memastikan website Anda terlihat dan berfungsi dengan sempurna di semua perangkat termasuk smartphone, tablet, laptop, dan komputer desktop. Mobile-friendliness sangat penting untuk pengalaman pengguna dan optimasi mesin pencari.">
+                  Absolutely! All websites we develop are fully responsive and mobile-optimized. We ensure your website looks and functions perfectly on all devices including smartphones, tablets, laptops, and desktop computers. Mobile-friendliness is essential for user experience and search engine optimization.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3 data-en="Can I update the website content myself?" data-id="Bisakah saya memperbarui konten website sendiri?">Can I update the website content myself?</h3>
+                <button class="faq-toggle" aria-expanded="false">
+                  <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p data-en="Yes, we build user-friendly content management systems that allow you to easily update text, images, and other content without technical knowledge. For WordPress sites, you'll have full access to the admin panel. For custom sites, we provide training and create intuitive interfaces for content updates." data-id="Ya, kami membangun sistem manajemen konten yang user-friendly yang memungkinkan Anda dengan mudah memperbarui teks, gambar, dan konten lainnya tanpa pengetahuan teknis. Untuk situs WordPress, Anda akan memiliki akses penuh ke panel admin. Untuk situs kustom, kami menyediakan pelatihan dan membuat antarmuka yang intuitif untuk pembaruan konten.">
+                  Yes, we build user-friendly content management systems that allow you to easily update text, images, and other content without technical knowledge. For WordPress sites, you'll have full access to the admin panel. For custom sites, we provide training and create intuitive interfaces for content updates.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-category">
+            <h2 data-en="Process & Support" data-id="Proses & Dukungan">Process & Support</h2>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3 data-en="What is your development process?" data-id="Bagaimana proses pengembangan Anda?">What is your development process?</h3>
+                <button class="faq-toggle" aria-expanded="false">
+                  <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p data-en="Our process includes: 1) Initial consultation and requirement gathering, 2) Project planning and proposal, 3) Design mockups and client feedback, 4) Development and testing, 5) Client review and revisions, 6) Final testing and launch, 7) Post-launch support and training. We keep you involved at every stage." data-id="Proses kami meliputi: 1) Konsultasi awal dan pengumpulan persyaratan, 2) Perencanaan proyek dan proposal, 3) Mockup desain dan feedback klien, 4) Pengembangan dan pengujian, 5) Review klien dan revisi, 6) Pengujian final dan peluncuran, 7) Dukungan pasca-peluncuran dan pelatihan. Kami melibatkan Anda di setiap tahap.">
+                  Our process includes: 1) Initial consultation and requirement gathering, 2) Project planning and proposal, 3) Design mockups and client feedback, 4) Development and testing, 5) Client review and revisions, 6) Final testing and launch, 7) Post-launch support and training. We keep you involved at every stage.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3 data-en="Do you provide training after project completion?" data-id="Apakah Anda menyediakan pelatihan setelah penyelesaian proyek?">Do you provide training after project completion?</h3>
+                <button class="faq-toggle" aria-expanded="false">
+                  <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p data-en="Yes, we provide comprehensive training sessions to ensure you can effectively manage and update your website. This includes how to use the content management system, make basic updates, understand the admin interface, and perform routine maintenance tasks. Training is included in our project packages." data-id="Ya, kami menyediakan sesi pelatihan yang komprehensif untuk memastikan Anda dapat secara efektif mengelola dan memperbarui website Anda. Ini mencakup cara menggunakan sistem manajemen konten, membuat pembaruan dasar, memahami antarmuka admin, dan melakukan tugas pemeliharaan rutin. Pelatihan disertakan dalam paket proyek kami.">
+                  Yes, we provide comprehensive training sessions to ensure you can effectively manage and update your website. This includes how to use the content management system, make basic updates, understand the admin interface, and perform routine maintenance tasks. Training is included in our project packages.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3 data-en="What if I need changes after the project is complete?" data-id="Bagaimana jika saya perlu perubahan setelah proyek selesai?">What if I need changes after the project is complete?</h3>
+                <button class="faq-toggle" aria-expanded="false">
+                  <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p data-en="We offer post-launch support for a specified period after project completion. For additional changes or new features beyond the initial scope, we provide maintenance services or can quote separately for the requested modifications. We also offer ongoing support packages for continuous website evolution." data-id="Kami menawarkan dukungan pasca-peluncuran untuk periode tertentu setelah penyelesaian proyek. Untuk perubahan tambahan atau fitur baru di luar ruang lingkup awal, kami menyediakan layanan pemeliharaan atau dapat memberikan penawaran terpisah untuk modifikasi yang diminta. Kami juga menawarkan paket dukungan berkelanjutan untuk evolusi website yang berkelanjutan.">
+                  We offer post-launch support for a specified period after project completion. For additional changes or new features beyond the initial scope, we provide maintenance services or can quote separately for the requested modifications. We also offer ongoing support packages for continuous website evolution.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-category">
+            <h2 data-en="SEO & Performance" data-id="SEO & Performa">SEO & Performance</h2>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3 data-en="Do you optimize websites for search engines?" data-id="Apakah Anda mengoptimalkan website untuk mesin pencari?">Do you optimize websites for search engines?</h3>
+                <button class="faq-toggle" aria-expanded="false">
+                  <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p data-en="Yes, we implement SEO best practices during development, including proper meta tags, structured data, fast loading speeds, mobile optimization, and clean URL structures. We also offer comprehensive SEO services including keyword research, content optimization, and ongoing SEO management." data-id="Ya, kami menerapkan praktik terbaik SEO selama pengembangan, termasuk meta tag yang tepat, data terstruktur, kecepatan loading yang cepat, optimasi mobile, dan struktur URL yang bersih. Kami juga menawarkan layanan SEO komprehensif termasuk riset kata kunci, optimasi konten, dan manajemen SEO berkelanjutan.">
+                  Yes, we implement SEO best practices during development, including proper meta tags, structured data, fast loading speeds, mobile optimization, and clean URL structures. We also offer comprehensive SEO services including keyword research, content optimization, and ongoing SEO management.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3 data-en="How do you ensure website security?" data-id="Bagaimana Anda memastikan keamanan website?">How do you ensure website security?</h3>
+                <button class="faq-toggle" aria-expanded="false">
+                  <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p data-en="Security is a top priority. We implement SSL certificates, secure coding practices, regular security updates, firewalls, malware scanning, and follow industry security standards. We also provide security audits and can set up monitoring systems to detect and prevent potential threats." data-id="Keamanan adalah prioritas utama. Kami menerapkan sertifikat SSL, praktik pengkodean yang aman, pembaruan keamanan rutin, firewall, pemindaian malware, dan mengikuti standar keamanan industri. Kami juga menyediakan audit keamanan dan dapat menyiapkan sistem pemantauan untuk mendeteksi dan mencegah ancaman potensial.">
+                  Security is a top priority. We implement SSL certificates, secure coding practices, regular security updates, firewalls, malware scanning, and follow industry security standards. We also provide security audits and can set up monitoring systems to detect and prevent potential threats.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-contact">
+            <h3 data-en="Still have questions?" data-id="Masih ada pertanyaan?">Still have questions?</h3>
+            <p data-en="Can't find the answer you're looking for? Our team is here to help. Contact us and we'll be happy to assist you with any questions about our services, pricing, or development process." data-id="Tidak dapat menemukan jawaban yang Anda cari? Tim kami siap membantu. Hubungi kami dan kami akan dengan senang hati membantu Anda dengan pertanyaan apa pun tentang layanan, harga, atau proses pengembangan kami.">
+              Can't find the answer you're looking for? Our team is here to help. Contact us and we'll be happy to assist you with any questions about our services, pricing, or development process.
+            </p>
+            <a href="index.html#contact" class="btn btn-primary">
+              <span data-en="Get in Touch" data-id="Hubungi Kami">Get in Touch</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="Asset/Borneo Webmu.png" alt="BorneoWebmu Logo" class="footer-logo-image" />
+            <span class="footer-logo-text">BorneoWebmu</span>
+          </a>
+          <p class="footer-description" data-en="Crafting exceptional digital experiences that drive business growth and success." data-id="Menciptakan pengalaman digital luar biasa yang mendorong pertumbuhan dan kesuksesan bisnis.">
+            Crafting exceptional digital experiences that drive business growth and success.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.017 0C8.396 0 7.989.013 7.041.048 6.094.082 5.52.204 5.036.388a5.918 5.918 0 00-2.14 1.393A5.918 5.918 0 00.388 4.036C.204 4.52.082 5.094.048 6.041.013 6.989 0 7.396 0 11.017c0 3.621.013 4.028.048 4.976.034.947.156 1.521.34 2.005a5.918 5.918 0 001.393 2.14 5.918 5.918 0 002.14 1.393c.484.184 1.058.306 2.005.34.948.035 1.355.048 4.976.048 3.621 0 4.028-.013 4.976-.048.947-.034 1.521-.156 2.005-.34a5.918 5.918 0 002.14-1.393 5.918 5.918 0 001.393-2.14c.184-.484.306-1.058.34-2.005.035-.948.048-1.355.048-4.976 0-3.621-.013-4.028-.048-4.976-.034-.947-.156-1.521-.34-2.005a5.918 5.918 0 00-1.393-2.14A5.918 5.918 0 0019.036.388C18.552.204 17.978.082 17.031.048 16.083.013 15.676 0 12.017 0zm0 2.162c3.204 0 3.584.012 4.85.07.3.012.921.166 1.532.276 1.291.369 2.288 1.365 2.657 2.657.11.611.264 1.232.276 1.532.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.012.3-.166.921-.276 1.532-.369 1.291-1.365 2.288-2.657 2.657-.611.11-1.232.264
